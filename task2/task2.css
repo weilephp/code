@@ -1,0 +1,203 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: Microsoft Yahei;
+}
+
+a{
+	color:blue;
+}
+
+.wrap{
+	background-color:rgb(222,222,222);
+	width:100%;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.logo{
+	height:60px;
+	background: rgb(51,51,51) url(./image/baidu.png) 0px 0px/200px 60px no-repeat;
+}
+
+.logo ul li a{
+	color:white;
+	text-decoration:none;
+	font-size:12px;
+}
+
+.logo ul li:first-child a{
+	color:rgb(155,155,155);
+}
+
+.logo ul li{
+	width:90px;
+	float:right;
+	height:60px;
+	line-height: 60px;
+}
+
+.article{
+	border-right:2px solid #8B8682;
+	border-bottom:2px solid #8B8682;
+	background-color: white;
+	width:1310px;
+	margin:20px auto;
+	padding:50px 20px;
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+p{
+	line-height: 30px;
+	font-size:15px;
+}
+
+h2{
+	margin:15px 0px 10px;
+	color:rgb(120,120,120);
+}
+
+.author{
+	color:rgba(120,120,120,70);
+}
+
+.indent{
+	text-indent: 2em;
+}
+
+img{
+	margin:10px 0;
+}
+
+.item{
+	list-style-type: none;
+	width:100px;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left:20px;
+}
+
+dl h2{
+	color:black;
+	margin-bottom:25px;
+}
+
+dd{
+	border:1px solid #8B8682;
+	width:125px;
+	height:125px;
+	text-align:center;
+	margin-left:40px;
+}
+
+dd img{
+	width:100px;
+	height:80px;
+}
+
+ol{
+	margin:10px 50px;
+}
+
+ol li{
+	width:80px;
+	height:25px;
+	line-height: 25px;
+}
+
+table{
+	width:100%;
+	border-left: 1px solid #8B8682;
+	border-top: 1px solid #8B8682;
+}
+
+table a{
+	color:#8855AA;
+}
+
+td,th{
+	border-right: 1px solid #8B8682;
+	border-bottom: 1px solid #8B8682;
+	height:28px;
+}
+
+th{
+	text-align:left;
+	color:white;
+	background: rgb(51,51,51);
+}
+
+tfoot{
+	background:rgb(204,204,204);
+}
+
+tfoot tr td:first-child{
+	border-right: none;
+}
+
+aside{
+	border-right:2px solid #8B8682;
+	border-bottom:2px solid #8B8682;
+	background-color: white;
+	width:1310px;
+	margin:20px auto;
+	padding:25px 20px;
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+aside h2{
+	font:bold 23px;
+	color:black;
+}
+
+form div{
+	height:30px;
+	margin:20px 20px;
+	line-height: 30px
+}
+
+form label{
+	width:467px;
+	text-align: right;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.tips{
+	margin-left: 511px;
+	color:#999999;
+	opacity: 50;
+}
+
+textarea{
+	width:700px;
+	height:100px;
+}
+
+.describe{
+	height:102px;
+}
+
+.describe label{
+	float:left;
+}
+
+.button{
+	width:100%;
+	height:40px;
+	background: blue;
+	border-radius:10px;
+	color:white;
+	font-weight: bold;
+	font-size: 20px;
+	cursor:pointer;
+}
