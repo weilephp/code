@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+<!--   
+    <li>第一名：福州（样例），10</li>
+      <li>第二名：福州（样例），10</li> -->
+  </ul>
+
+<script type="text/javascript">
+
+window.onload = function(){
+    var aqiData = [
+      ["北京", 90],
+      ["上海", 50],
+      ["福州", 10],
+      ["广州", 50],
+      ["成都", 90],
+      ["西安", 100]
+    ];
+
+    (function () {
+
+      /*
+      在注释下方编写代码
+      遍历读取aqiData中各个城市的数据
+      将空气质量指数大于60的城市显示到aqi-list的列表中
+      */
+     
+     var num = new Array("一","二","三"); 
+     var list = document.getElementById("aqi-list");
+     var data = new Array();
+     //利用for循环，将空气质量指数大于60的数组堆栈进入新数组data中
+     for(var i=0;i<aqiData.length;i++){
+          if(aqiData[i][1]>60){
+              data.push(aqiData[i]);
+          }
+     }
+
+     //利用起泡算法将二维数组按污染指数大到小排序
+     for(var i=0;i<data.length-1;i++){
+        for(var j=0;j<data.length-1-i;j++){
+          if(data[j][1]<data[j+1][1]){
+            var max = data[j+1];
+            data[j+1] = data[j];
+            data[j] = max;
+          }
+        }
+      }
+
+      //循环添加li节点
+      for(var i=0;i<data.length;i++){
+          var content = "第"+num[i]+"名："+data[i][0]+","+data[i][1];
+          var ce = document.createElement("li");
+          var ctext = document.createTextNode(content);
+          ce.appendChild(ctext);
+          list.appendChild(ce);
+      }
+
+    })();
+}
+
+</script>
+</body>
+</html>
